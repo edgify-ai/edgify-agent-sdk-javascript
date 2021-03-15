@@ -20,7 +20,7 @@ const example = async () => {
   await sdk.createGroundTruth(prediction, label, source);
 
   // if you need to delete a sample
-  sdk.deleteSample(uuid);
+  await sdk.deleteSample(uuid);
 
   // inform edgify on transaction start
   await sdk.startCustomerTransaction();
