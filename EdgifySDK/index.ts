@@ -83,7 +83,7 @@ export class EdgifySDK {
     });
   }
 
-  StartCustomerTransaction(): Promise<void> {
+  startCustomerTransaction(): Promise<void> {
     const req = new CreateAnalyticsEventRequest();
     req.setName('TransactionCustomerStart');
     return new Promise((resolve, reject) => {
@@ -97,7 +97,7 @@ export class EdgifySDK {
     });
   }
 
-  EndCustomerTransaction(): Promise<void> {
+  endCustomerTransaction(): Promise<void> {
     const req = new CreateAnalyticsEventRequest();
     req.setName('TransactionCustomerEnd');
     return new Promise((resolve, reject) => {

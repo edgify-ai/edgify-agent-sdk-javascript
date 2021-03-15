@@ -75,7 +75,7 @@ var EdgifySDK = /** @class */ (function () {
             });
         });
     };
-    EdgifySDK.prototype.StartCustomerTransaction = function () {
+    EdgifySDK.prototype.startCustomerTransaction = function () {
         var _this = this;
         var req = new Analytics_1.CreateAnalyticsEventRequest();
         req.setName('TransactionCustomerStart');
@@ -90,7 +90,7 @@ var EdgifySDK = /** @class */ (function () {
             });
         });
     };
-    EdgifySDK.prototype.EndCustomerTransaction = function () {
+    EdgifySDK.prototype.endCustomerTransaction = function () {
         var _this = this;
         var req = new Analytics_1.CreateAnalyticsEventRequest();
         req.setName('TransactionCustomerEnd');
